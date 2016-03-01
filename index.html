@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>autocomplete</title>
+</head>
+<body>
+    <input id="autocomplete" placeholder="Search term" />
+    <div id="results"></div>
+    <script type="text/javascript" src="autocomplete.js"></script>
+    <script type="text/javascript">
+    	autocomplete({
+		    url: 'http://localhost:3000/autocomplete?term=',
+		    el: document.getElementById('autocomplete')
+		});
+    </script>
+</body>
+</html>
